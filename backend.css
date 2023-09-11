@@ -1,0 +1,204 @@
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1,
+.title {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.section {
+  margin: 0 auto;
+}
+
+/* Intro section */
+.contact_link,
+.info_detail {
+  color: rgb(85, 85, 85);
+}
+.info_icon {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+.info_detail {
+  display: flex;
+  font-size: 1rem;
+}
+.contact_link:hover {
+  color: blue;
+}
+.intro_section {
+  display: block;
+  font-family: "Roboto", sans-serif;
+}
+.left {
+  width: 40%;
+}
+.profile_pic {
+  margin-top: 1.5rem;
+  width: 80%;
+  border-radius: 2rem;
+}
+
+/* Project Section */
+.project_section {
+  margin: 0 auto;
+}
+.project_wrapper {
+  display: grid;
+  grid-template-areas:
+    "post-1"
+    "post-2"
+    "post-3"
+    "post-4";
+}
+.project_preview {
+  padding: 1rem;
+}
+.project {
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.project-1 {
+  grid-area: post-1;
+}
+.project-2 {
+  grid-area: post-2;
+}
+.project-3 {
+  grid-area: post-3;
+}
+.project-4 {
+  grid-area: post-4;
+}
+.project_pic {
+  width: 90%;
+  height: auto;
+}
+.project_intro {
+  line-height: 1.75rem;
+}
+
+.site_link {
+  color: #17a2b8;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 2rem;
+}
+.site_link:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+/* Skill Section */
+.skills {
+  display: block;
+  margin-bottom: 3rem;
+}
+.skill {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.05rem solid #c0c0c0;
+}
+.logo {
+  width: 1rem;
+  height: auto;
+}
+
+.cert {
+  padding: 1rem;
+}
+.cert_logo {
+  height: 1rem;
+  width: auto;
+}
+
+.uni_year {
+  margin-bottom: 3rem;
+}
+.uni {
+  display: flex;
+}
+.uni_logo {
+  height: 3.5rem;
+  width: auto;
+  margin-right: 2rem;
+}
+.uni_name,
+.uni_major {
+  line-height: 2.5rem;
+}
+.uni_name {
+  font-size: 1.25rem;
+}
+.uni_major {
+  font-size: 1rem;
+}
+.uni_year {
+  font-size: 0.75rem;
+  color: rgb(85, 85, 85);
+}
+@media screen and (min-width: 600px) {
+  .section {
+    margin: 0 3rem;
+  }
+  .intro_section {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .title {
+    display: flex;
+  }
+  .project_section {
+    margin: 0 3rem;
+  }
+  .project_wrapper {
+    display: grid;
+    grid-template-areas:
+      "post-1 post-2"
+      "post-3 post-4";
+    gap: 2rem;
+  }
+  .skills {
+    display: flex;
+    gap: 3rem;
+  }
+}
+
+@media print {
+  .section {
+    margin: 0 3rem;
+  }
+  .intro_section {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .title {
+    display: flex;
+  }
+  .project_section {
+    margin: 0 1.5rem;
+  }
+  .project {
+    margin-bottom: 0;
+  }
+  .project_wrapper {
+    display: grid;
+    grid-template-areas:
+      "post-1 post-2"
+      "post-3 post-4";
+    gap: 1rem;
+  }
+  .skills {
+    display: flex;
+    gap: 3rem;
+  }
+}

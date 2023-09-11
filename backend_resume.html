@@ -1,0 +1,258 @@
+<!--Need to convert it to pdf-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="backend.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <title>Backend Resume</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="linebreak"></div> -->
+      <section class="intro_section">
+        <div class="left">
+          <img
+            src="profile_pic.jpg"
+            alt="profile picture"
+            class="profile_pic"
+          />
+        </div>
+        <div class="right">
+          <h1>胡惠如 Hui Ru Hu</h1>
+
+          <p class="intro_paragraph">
+            因曾想出國留學，而培養出能與英文母語人士流利對談的口說能力與迅速理解英文文章的能力
+          </p>
+
+          <p class="intro_paragraph">
+            喜歡寫程式帶給我的挑戰性、解決問題的成就感，以及邏輯思考，我認為寫程式不僅是一份工作，更是個能讓自己持續進步的媒介
+          </p>
+
+          <p>
+            Find me on
+            <a href="https://github.com/Ru960413" class="contact_link"
+              >GitHub</a
+            >
+            or my
+            <a
+              href="https://web-production-431a.up.railway.app/zh"
+              class="contact_link"
+              target="_blank"
+              >portfolio</a
+            >
+          </p>
+
+          <p class="info_detail">
+            <span class="info_icon"
+              ><img src="../contact_icons/home.png" alt="location_icon" /></span
+            >Taichung City, Taiwan
+          </p>
+
+          <p class="info_detail">
+            <span class="info_icon"
+              ><img src="../contact_icons/public.png" alt="website_icon"
+            /></span>
+            <a
+              class="contact_link"
+              href="https://web-production-431a.up.railway.app/zh"
+              rel="noopener noreferrer"
+              target="_blank"
+              >https://web-production-431a.up.railway.app/zh</a
+            >
+          </p>
+
+          <p class="info_detail">
+            <span class="info_icon"
+              ><img src="../contact_icons/smartphone.png" alt="phone_icon"
+            /></span>
+            0972985772
+          </p>
+
+          <p class="info_detail">
+            <span class="info_icon"
+              ><img src="../contact_icons/mail.png" alt="email_icon"
+            /></span>
+            <a
+              href="mailto:huiruhu96@gmail.com"
+              rel="noopener noreferrer"
+              class="contact_link"
+              target="_blank"
+              >huiruhu96@gmail.com</a
+            >
+          </p>
+        </div>
+      </section>
+      <section class="project_section">
+        <h2 class="title">Projects</h2>
+        <hr />
+        <div class="project_wrapper">
+          <div class="project project-1">
+            <div class="project_preview">
+              <h3>台灣24小時急診獸醫院地圖</h3>
+              <img
+                src="../project_pics/vet_map_en.png"
+                alt="Emergency vet site"
+                class="project_pic"
+              />
+              <p class="project_intro">
+                這是一個雙語（中、英文）的地圖服務網站。
+                前端部分利用JavaScript與Google Map
+                API互動，後端部分則運用Python及Flask架立sever。使用Geolocation抓取使用者位置並在地圖上顯示與之鄰近的、有提供急診服務的獸醫院。
+              </p>
+
+              <a
+                href="https://24hr-vet-clinic-route-planner-production.up.railway.app/"
+                class="site_link"
+                >View My Website</a
+              >
+            </div>
+          </div>
+          <div class="project project-2">
+            <div class="project_preview">
+              <h3>Bankist虛擬銀行</h3>
+              <img
+                src="../project_pics/currency_page.png"
+                alt="Bankist cover"
+                class="project_pic"
+              />
+              <p class="project_intro">
+                Bankist是一個用HTML、CSS、JavaScript、Exchange Rate
+                API、Python以及Django編寫的Web-based模擬網路銀行，支援使用者存款、貸款、提款以及換匯，也有使用者驗證的相關功能。
+              </p>
+              <p>
+                <a
+                  href="https://finance-django-production.up.railway.app"
+                  class="site_link"
+                  >View My Website</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="project project-3">
+            <div class="project_preview">
+              <h3>To Do List網頁（附使用者驗證功能與RESTful API）</h3>
+              <img
+                src="../project_pics/To_Do_List_Homepage.png"
+                alt="To Do List Site"
+                class="project_pic"
+              />
+              <p class="project_intro">
+                讓使用者添加、檢視、更新以及刪除待辦事項（CRUD），另外亦有密碼重設的功能，當使用者遞交重設密碼的要求後，系統變會寄送重設密碼的信件至其信箱以重設密碼。
+              </p>
+              <p>
+                <a
+                  href="https://todolist-production-2fac.up.railway.app/"
+                  class="site_link"
+                  >View My Website</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="project project-4">
+            <div class="project_preview">
+              <h3>24HR Vet Clinics API</h3>
+              <img
+                src="../project_pics/default.jpg"
+                alt="API"
+                class="project_pic"
+              />
+              <p class="project_intro">
+                這個project使我所架設的「台灣24小時急診獸醫院地圖」能更有效率的更新資料、更好維護也更加簡潔。它提供的endpoint包括查詢單一城市的所有獸醫院、查詢所有中英文獸醫院的資料，以及更新、刪除、新增獸醫院等。
+              </p>
+              <p>
+                <a
+                  href="https://24hrvetapiv3-production.up.railway.app/v3/clinics/en"
+                  class="site_link"
+                  >查看所有英文的急診獸醫院資料</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skill_section section">
+        <h2 class="title">Skills</h2>
+        <hr />
+        <div class="skills">
+          <div class="skill">
+            <img
+              src="https://www.vectorlogo.zone/logos/python/python-icon.svg"
+              alt="Python logo"
+              class="logo"
+            />
+            Python
+          </div>
+          <div class="skill">
+            <img
+              src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-icon.svg"
+              alt="django logo"
+              class="logo"
+            />
+            Django
+          </div>
+          <div class="skill">
+            <img
+              src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg"
+              alt="flask logo"
+              class="logo"
+            />
+            Flask
+          </div>
+          <div class="skill">
+            <img
+              src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+              alt="Postman logo"
+              class="logo"
+            />
+            Postman
+          </div>
+          <div class="skill">
+            <img
+              src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg"
+              alt="SQLite logo"
+              class="logo"
+            />
+            SQLite
+          </div>
+        </div>
+      </section>
+
+      <section class="language_skill_section section">
+        <h2 class="title">English Certificates</h2>
+        <hr />
+        <div class="cert">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/IELTS_logo.svg/1556px-IELTS_logo.svg.png?20140125031022"
+            alt="IELTS logo"
+            class="cert_logo"
+          />
+          International English Language Testing System (IELTS): overall 7.0
+        </div>
+        <div class="cert">
+          <img src="toeic.png" alt="TOEIC logo" class="cert_logo" />
+          TOEIC: total 830 (listening and writing)
+        </div>
+      </section>
+      <section class="education_section section">
+        <h2 class="title">Education</h2>
+        <hr />
+        <div class="uni">
+          <img src="uni_logo.png" alt="university logo" class="uni_logo" />
+
+          <div class="uni_info">
+            <div class="uni_name">中山醫學大學</div>
+            <div class="uni_major">生物醫學科學</div>
+            <div class="uni_year">2014 - 2018</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
